@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\6.png" type="png">
+    <title>Mohammed Sasni | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+    .link-container {
+        display: flex;
+        gap: 20px; /* approximately gap-3 in Tailwind (0.75rem) */
+    }
+    
+    .demo-link {
+        color: #60a5fa; /* text-blue-400 */
+        text-decoration: none;
+    }
+    
+    .demo-link:hover {
+        color: #ffffff; /* hover:text-blue-300 */
+    }
+    
+    .source-link {
+        color: #a78bfa; /* text-purple-400 */
+        text-decoration: none;
+    }
+    
+    .source-link:hover {
+        color: #ffffff; /* hover:text-purple-300 */
+    }
+    
+    /* Font Awesome icons styling (assuming you have the FA CSS loaded) */
+    .fas, .fab {
+        margin-right: 4px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">ASMS</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>A showcase of my work across various domains</p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="design">Graphic Design</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="video">Video Editing</button>
+                    <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Web Development Projects -->
+                    <div class="project-item" data-category="web">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="E-commerce Platform">
+                        <div class="project-info">
+                            <h3>Secure E-commerce Platform</h3>
+                            <p>AI-powered full-stack e-commerce solution with advanced security features.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="source-link">
+                                <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="web">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Security Dashboard">
+                        <div class="project-info">
+                            <h3>Network Security Dashboard</h3>
+                            <p>Real-time monitoring tool for network security with threat detection capabilities.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>Cyber Security</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="source-link">
+                                <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graphic Design Projects -->
+                    <div class="project-item" data-category="design">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Brand Identity">
+                        <div class="project-info">
+                            <h3>Tech Startup Brand Identity</h3>
+                            <p>Complete branding package including logo, business cards, and brand guidelines.</p>
+                            <div class="project-tags">
+                                <span>Logo Design</span>
+                                <span>Branding</span>
+                                <span>Illustration</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="design">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Marketing Materials">
+                        <div class="project-info">
+                            <h3>Marketing Campaign Materials</h3>
+                            <p>Series of posters, social media graphics, and digital ads for a product launch.</p>
+                            <div class="project-tags">
+                                <span>Print Design</span>
+                                <span>Social Media</span>
+                                <span>Advertising</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Design Projects -->
+                    <div class="project-item" data-category="ui">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Fitness App UI">
+                        <div class="project-info">
+                            <h3>Fitness Tracking App UI</h3>
+                            <p>User interface design for a mobile fitness application with workout tracking features.</p>
+                            <div class="project-tags">
+                                <span>Mobile UI</span>
+                                <span>Figma</span>
+                                <span>User Experience</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="ui">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Banking App">
+                        <div class="project-info">
+                            <h3>Banking App Redesign</h3>
+                            <p>Complete redesign of a banking application focusing on usability and accessibility.</p>
+                            <div class="project-tags">
+                                <span>UX Research</span>
+                                <span>Prototyping</span>
+                                <span>Accessibility</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Editing Projects -->
+                    <div class="project-item" data-category="video">
+                        <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Product Video">
+                        <div class="project-info">
+                            <h3>Product Launch Video</h3>
+                            <p>Promotional video for a tech product launch with motion graphics and animations.</p>
+                            <div class="project-tags">
+                                <span>After Effects</span>
+                                <span>Premiere Pro</span>
+                                <span>Motion Graphics</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-eye"></i> View Video
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing Projects -->
+                    <div class="project-item" data-category="marketing">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO Campaign">
+                        <div class="project-info">
+                            <h3>SEO Optimization Campaign</h3>
+                            <p>Comprehensive SEO strategy implementation for an e-commerce website.</p>
+                            <div class="project-tags">
+                                <span>Keyword Research</span>
+                                <span>On-Page SEO</span>
+                                <span>Content Strategy</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-lightbulb"></i> View Case Study
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Work Together?</h2>
+                <p>Let's discuss how my skills can contribute to your project's success.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" ><h3 style="color: #3498DB;">ASMS</h3></a>
+                    <p>I build Exceptional Digital Experiences That are Fast, Accessible, Visually Appealing, and Responsive.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mohammed-sasni/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/share/18tY8VWe1i/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sasni_saheed?igsh=ZTh2MzhvYXU5NTFz" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.behance.net/sasnisdesigns" target="_blank"><i class="fab fa-behance"></i></a>
+                        <a href="https://github.com/Mohammed-Sasni" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a class="footer-saslink" href="https://www.linkedin.com/in/mohammed-sasni/"><b>Mohammed Sasni.</b></a> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    projectItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

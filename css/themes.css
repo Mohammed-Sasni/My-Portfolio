@@ -1,0 +1,74 @@
+/* Dark Theme (Default) */
+[data-theme="dark"] {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --dark-color: #1a1a1a;
+    --light-color: #2c3e50;
+    
+    --text-color: #f8f9fa;
+    --text-light: #adb5bd;
+    --bg-color: #212529;
+    --card-bg: #2c3e50;
+    --border-color: #495057;
+}
+
+[data-theme="dark"] header {
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .theme-switcher i {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .hamburger .line {
+    background-color: var(--text-color);
+}
+
+[data-theme="dark"] .nav-links a {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .nav-links a.active,
+[data-theme="dark"] .nav-links a:hover {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .testimonial-card,
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .project-item {
+    background-color: var(--dark-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .skill-card:hover,
+[data-theme="dark"] .project-card:hover,
+[data-theme="dark"] .service-card:hover,
+[data-theme="dark"] .project-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background-color: var(--dark-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Add these to your existing themes.css */
+[data-theme="dark"] .skill-items span:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+[data-theme="dark"] .progress {
+    background-color: var(--primary-color);
+}
+
