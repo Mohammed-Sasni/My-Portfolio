@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\6.png" type="png">
+    <title>Mohammed Sasni | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+    .link-container {
+        display: flex;
+        gap: 20px; /* approximately gap-3 in Tailwind (0.75rem) */
+    }
+    
+    .demo-link {
+        color: #60a5fa; /* text-blue-400 */
+        text-decoration: none;
+    }
+    
+    .demo-link:hover {
+        color: #ffffff; /* hover:text-blue-300 */
+    }
+    
+    .source-link {
+        color: #a78bfa; /* text-purple-400 */
+        text-decoration: none;
+    }
+    
+    .source-link:hover {
+        color: #ffffff; /* hover:text-purple-300 */
+    }
+    
+    /* Font Awesome icons styling (assuming you have the FA CSS loaded) */
+    .fas, .fab {
+        margin-right: 4px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">AS<span>MS</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>A showcase of my work across various domains</p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="develop">Development</button>
+                    <button class="filter-btn" data-filter="design">Graphic Design</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="video">Video Editing</button>
+                    <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Development Projects -->
+                    <div class="project-item" data-category="develop">
+                        <img src="images/pos.png" alt="POS System">
+                        <div class="project-info">
+                            <h3>Point of Sale (POS) System</h3>
+                            <p>Built a POS system for efficient retail sales and inventory management.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>LARAVEL</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="link-container">
+                                <!--- 
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a> --->
+                                <a href="https://github.com/Mohammed-Sasni/Point-Of-Sale-System" class="source-link">
+                                <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="develop">
+                        <img src="images/Business Website.png" alt="PrimBiz-Business Website">
+                        <div class="project-info">
+                            <h3>PrimeBiz - Business Website</h3>
+                            <p>Incorporated business website, highlighting a professional design and business details.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Java Script</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="https://primebiz-mohammed-sasni.netlify.app/" class="demo-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Mohammed-Sasni/Front-End-Web-Development-Projects/tree/main/PrimeBiz%20-%20Business%20Website" class="source-link">
+                                <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="develop">
+                        <img src="images/Trading Website.png" alt="Trading Website">
+                        <div class="project-info">
+                            <h3>Astarfx - Trading Website</h3>
+                            <p>Featured my WordPress trading website, a platform with real-time market insights.</p>
+                            <div class="project-tags">
+                                <span>WordPress</span>
+                                <span>Responsive UI</span>
+                                
+                            </div>
+                            <div class="link-container">
+                                <a href="https://astarfx.com/" class="demo-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <!---
+                                <a href="#" class="source-link">
+                                <i class="fab fa-github"></i> Source Code
+                                </a>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graphic Design Projects -->
+                    <div class="project-item" data-category="design">
+                        <img src="images/Graphic design1.png" alt="Social Media Ads">
+                        <div class="project-info">
+                            <h3>Social Media Ad Poster</h3>
+                            <p>Highlighting creative visuals and strategic branding.</p>
+                            <div class="project-tags">
+                                <span>Social Media Ads</span>
+                                <span>Branding</span>
+                                <span>Photoshop</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="https://www.behance.net/sasnisdesigns/projects" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="design">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Marketing Materials">
+                        <div class="project-info">
+                            <h3>Marketing Campaign Materials</h3>
+                            <p>Series of posters, social media graphics, and digital ads for a product launch.</p>
+                            <div class="project-tags">
+                                <span>Print Design</span>
+                                <span>Social Media</span>
+                                <span>Advertising</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Design Projects -->
+                    <div class="project-item" data-category="ui">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Fitness App UI">
+                        <div class="project-info">
+                            <h3>Fitness Tracking App UI</h3>
+                            <p>User interface design for a mobile fitness application with workout tracking features.</p>
+                            <div class="project-tags">
+                                <span>Mobile UI</span>
+                                <span>Figma</span>
+                                <span>User Experience</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item" data-category="ui">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Banking App">
+                        <div class="project-info">
+                            <h3>Banking App Redesign</h3>
+                            <p>Complete redesign of a banking application focusing on usability and accessibility.</p>
+                            <div class="project-tags">
+                                <span>UX Research</span>
+                                <span>Prototyping</span>
+                                <span>Accessibility</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-star"></i> View on Behance
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Editing Projects -->
+                    <div class="project-item" data-category="video">
+                        <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Product Video">
+                        <div class="project-info">
+                            <h3>Product Launch Video</h3>
+                            <p>Promotional video for a tech product launch with motion graphics and animations.</p>
+                            <div class="project-tags">
+                                <span>After Effects</span>
+                                <span>Premiere Pro</span>
+                                <span>Motion Graphics</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-eye"></i> View Video
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing Projects -->
+                    <div class="project-item" data-category="marketing">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SEO Campaign">
+                        <div class="project-info">
+                            <h3>SEO Optimization Campaign</h3>
+                            <p>Comprehensive SEO strategy implementation for an e-commerce website.</p>
+                            <div class="project-tags">
+                                <span>Keyword Research</span>
+                                <span>On-Page SEO</span>
+                                <span>Content Strategy</span>
+                            </div>
+                            <div class="link-container">
+                                <a href="#" class="demo-link">
+                                <i class="fas fa-lightbulb"></i> View Case Study
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Work Together?</h2>
+                <p>Let's discuss how my skills can contribute to your project's success.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo1">
+                    <a href="index.html">AS<span>MS</span></a>
+                </div>
+                    <p>I build Exceptional Digital Experiences That are Fast, Accessible, Visually Appealing, and Responsive.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mohammed-sasni/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/share/18tY8VWe1i/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sasni_saheed?igsh=ZTh2MzhvYXU5NTFz" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.behance.net/sasnisdesigns" target="_blank"><i class="fab fa-behance"></i></a>
+                        <a href="https://github.com/Mohammed-Sasni" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a class="footer-saslink" href="https://www.linkedin.com/in/mohammed-sasni/"><b>Mohammed Sasni.</b></a> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    projectItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
